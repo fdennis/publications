@@ -1,0 +1,7 @@
+1. Write correct path to a.properties in CLC.java:35
+
+2. Run "mvn clean install"
+
+3. Run ".\key-regen-mpc.bat". This will "create" four parties.
+
+4. Run "./main.bat"

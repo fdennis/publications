@@ -8,7 +8,19 @@
     <artifactId>smpc-master-thesis</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <repositories>
+      <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+      </repository>
+    </repositories>
+
     <dependencies>
+        <dependency>
+          <groupId>com.github.emilianobonassi</groupId>
+          <artifactId>jpbc</artifactId>
+          <version>2.0.0</version>
+        </dependency>
         <dependency>
             <groupId>com.codahale</groupId>
             <artifactId>shamir</artifactId>
@@ -63,5 +75,10 @@
         </plugin>
   </plugins>
 </build>
+
+<properties>
+  <maven.compiler.source>1.7</maven.compiler.source>
+  <maven.compiler.target>1.7</maven.compiler.target>
+</properties>
 
 </project>

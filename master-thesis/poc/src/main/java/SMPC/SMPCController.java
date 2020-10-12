@@ -86,12 +86,8 @@ public class SMPCController {
             }
             String recoveredSecret = content.toString();
 
-            if(recoveredSecret.equals("secret\n"))
-
-
             // G sends the recovered secret to E
             command = "http://localhost:8083/GtoE/" + recoveredSecret;
-            //System.out.println("111");
 
             url = new URL(command);
             con = (HttpURLConnection) url.openConnection();

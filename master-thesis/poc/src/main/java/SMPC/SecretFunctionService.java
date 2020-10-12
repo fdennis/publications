@@ -43,21 +43,13 @@ public class SecretFunctionService {
 
         ArrayList<String> commands = new ArrayList<String>();
         if(kgc) {
-            commands.add("http://localhost:8084/KGCtoP1");
-            commands.add("http://localhost:8085/KGCtoP2");
-            commands.add("http://localhost:8086/KGCtoP3");
-            // For extra parties
-            commands.add("http://localhost:8087/KGCtoP4");
-            commands.add("http://localhost:8088/KGCtoP5");
-            commands.add("http://localhost:8089/KGCtoP6");
+            commands.add("http://localhost:8081/KGCtoP1");
+            commands.add("http://localhost:8082/KGCtoP2");
+            commands.add("http://localhost:8083/KGCtoP3");
         } else {
-            commands.add("http://localhost:8084/VtoP1");
-            commands.add("http://localhost:8085/VtoP2");
-            commands.add("http://localhost:8086/VtoP3");
-            // For extra parties
-            commands.add("http://localhost:8087/VtoP4");
-            commands.add("http://localhost:8088/VtoP5");
-            commands.add("http://localhost:8089/VtoP6");
+            commands.add("http://localhost:8081/VtoP1");
+            commands.add("http://localhost:8082/VtoP2");
+            commands.add("http://localhost:8083/VtoP3");
         }
         while(counter < n){
             try {
